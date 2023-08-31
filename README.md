@@ -30,7 +30,7 @@ print(bill.id)
 
 The primary keys are auto-incremental integers.
 
-Now, let's see what you can do with `RandomIDModel`:
+Now, let's see how `RandomIDModel` helps you:
 
 ```python
 from django.db import models
@@ -49,12 +49,13 @@ print(bill.id)
 
 The Random primary ID is guaranteed to be unique.
 
-By default the ID will be 12 digits long, but you can override this in
+By default the ID will be 16 digits long, but you can change this in
 settings.py with the `RANDOM_ID_MODEL_LENGTH` setting.
 
-`RandomIDModel` inherits directly from `models.Model`
+You can also use `RandomAlphaNumIDModel` base model to generate string 
+alphanumerical primary keys.
 
-## Developing Django Random ID Model
+## Testing - In Progress
 
 To install django_random_id, along with the tools you need to develop and 
 run the tests, run the following in your virtual environment:

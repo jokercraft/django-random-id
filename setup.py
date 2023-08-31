@@ -5,7 +5,7 @@ with open("README.md") as fh:
 
 setup(
     name='django_random_id',
-    version='0.0.1',
+    version='0.1.0',
     author="Serdar Ilarslan",
     description='A model base class which provides custom designed random integer primary keys to you Django models.',
     long_description=long_description,
@@ -13,8 +13,12 @@ setup(
     license="MIT",
     py_modules=["django_random_id"],
     package_dir={'': 'src'},
+    install_requires=[
+        'django>=3.0',
+    ],
     extras_require={
-        "dev": ["pytest"],
+        "dev": ["django>=3.0",
+                "pytest"],
     },
     classifiers=[
         "Development Status :: 5 - Production/Stable",
